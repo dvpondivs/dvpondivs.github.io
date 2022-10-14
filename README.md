@@ -1,2 +1,0 @@
-# dvpondivs.github.io
-games
