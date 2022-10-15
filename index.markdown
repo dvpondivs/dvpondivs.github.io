@@ -1,12 +1,8 @@
 ---
-title: {{site.title}}
+title: dupondius
 layout: default
 ---
 
 # Games
 
-### akrocorinth
-
-### maniples
-
-### triumvir
+To do: add akrocorinth

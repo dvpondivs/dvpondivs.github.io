@@ -3,6 +3,9 @@
 title: dupondius
 description: board games
 
+github:
+  is_project_page: false
+
 # Build settings
 theme: jekyll-theme-cayman
 plugins:
