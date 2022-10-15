@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+* [Caymen](https://pages-themes.github.io/cayman/)
+* [Leap Day](https://pages-themes.github.io/leap-day/)
+* [Merlot](https://pages-themes.github.io/merlot/)
+* [Modernist](https://pages-themes.github.io/modernist/)
+* [Minimal](https://pages-themes.github.io/minimal/)
