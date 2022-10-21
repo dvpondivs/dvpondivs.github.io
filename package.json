@@ -1,0 +1,26 @@
+{
+  "name": "dvpondivs.github.io",
+  "version": "1.0.0",
+  "description": "a static 11ty app",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvpondivs/dvpondivs.github.io.git"
+  },
+  "keywords": [
+    "11ty"
+  ],
+  "author": "camjm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvpondivs/dvpondivs.github.io/issues"
+  },
+  "homepage": "https://github.com/dvpondivs/dvpondivs.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
