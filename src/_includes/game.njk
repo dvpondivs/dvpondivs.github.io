@@ -1,0 +1,13 @@
+---
+layout: "base.njk"
+---
+
+<div class="game">
+  <h2 class="game__heading">{{ title }}</h2>
+  <div class="game__image-wrapper">
+      <img class="game__image" src="{{ image }}" alt="{{ imageAlt }}">
+  </div>
+  <div class="game__content prose">
+    {{ content | safe }}
+  </div>
+</div>

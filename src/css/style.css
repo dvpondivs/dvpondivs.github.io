@@ -206,81 +206,40 @@
     text-decoration: underline;
   }
   
-  /* Technologies Styles */
+  /* Game Styles */
   
-  .technologies__heading {
-    margin-bottom: 1.5rem;
-    padding: 1rem 0;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 700;
-    color: var(--amber-600);
-  }
-  
-  .technologies__list {
-    width: 100%;
-    max-width: 36rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .technologies__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .technologies__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 100%;
-    margin-bottom: 0.5rem;
-  }
-  
-  .technologies__title {
-    font-weight: 400;
-    color: var(--slate-600);
-  }
-  
-  /* Project Styles */
-  
-  .projects {
+  .games {
     margin: 2rem auto 4rem auto;
   }
   
-  .projects__heading {
+  .games__heading {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    color: var(--amber-600);
+    color: var(--maroon-800);
   }
   
-  .project__heading {
+  .game__heading {
     padding: 1rem 0;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--amber-600);
+    color: var(--maroon-800);
   }
   
-  .project-grid {
+  .game-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
   
-  .project-card {
+  .game-card {
     box-shadow: var(--box-shadow);
     border-radius: 0.375rem;
     overflow: hidden;
   }
   
-  .project-card__image-wrapper img {
+  .game-card__image-wrapper img {
     width: 100%;
     height: auto;
     border-top-left-radius: 0.375rem;
@@ -288,63 +247,63 @@
     transition: transform 0.3s ease 0s;
   }
   
-  .project-card__image-wrapper:hover img {
+  .game-card__image-wrapper:hover img {
     transform: scale(1.05);
   }
   
-  .project-card__body {
+  .game-card__body {
     padding: 1rem;
   }
   
-  .project-card__title {
+  .game-card__title {
     margin-bottom: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
   }
   
-  .project-card__title:hover {
+  .game-card__title:hover {
     text-decoration: underline;
   }
   
-  .project-card__tags {
+  .game-card__tags {
     margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
   }
   
-  .project-card__tag {
+  .game-card__tag {
     display: flex;
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
     font-size: 0.75rem;
-    background-color: var(--amber-100);
-    color: var(--amber-800);
+    background-color: var(--teal-100);
+    color: var(--teal-300);
   }
   
-  .project-card__summary {
+  .game-card__summary {
     margin-bottom: 1rem;
     color: var(--slate-600);
   }
   
-  .project-card__link {
+  .game-card__link {
     display: inline-flex;
     align-items: center;
     font-weight: 600;
-    color: var(--amber-700);
+    color: var(--teal-300);
   }
   
-  .project-card__link-icon {
+  .game-card__link-icon {
     width: 20px;
     height: 20px;
   }
   
-  .project-card__link:hover {
+  .game-card__link:hover {
     text-decoration: underline;
   }
   
-  /* Project Page Styles */
+  /* game Page Styles */
   
-  .project-list {
+  .game-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -352,15 +311,15 @@
     margin: 0 auto 4rem auto;
   }
   
-  .project {
+  .game {
     margin-bottom: 4rem;
   }
   
-  .project__image-wrapper {
+  .game__image-wrapper {
     margin-bottom: 1.5rem;
   }
   
-  .project__image-wrapper img {
+  .game__image-wrapper img {
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
