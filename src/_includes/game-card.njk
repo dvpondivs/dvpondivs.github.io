@@ -1,6 +1,7 @@
 <article class="game-card">
   <div class="game-card__image-wrapper">
-    <img class="game__image" src="{{ game.data.image }}" alt="{{ game.data.imageAlt }}">
+    {# <img class="game__image" src="{{ game.data.image }}" alt="{{ game.data.imageAlt }}"> #}
+    {% EleventyImage game.data.image, game.data.imageAlt, "(min-width: 30em) 50vw, 100vw" %}
   </div>
   <div class="game-card__body">
     <div class="game-card__tags">
