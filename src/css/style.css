@@ -1,12 +1,26 @@
 /* CSS Variables */
 
 :root {
+    --maroon-100: #72435c;
+    --maroon-600: #843a40;
+    --maroon-700: #911513;
+    --maroon-800: #7a0300;
+
+    --teal-100: #b4f8c8;
+    --teal-200: #00ffff;
+    --teal-300: #159957;
+    --teal-400: #155799;
+    
     --slate-300: #cbd5e1;
+    --slate-400: #819198;
+    --slate-500: #606c71;
     --slate-600: #475569;
-    --amber-100: #fef3c7;
-    --amber-600: #d97706;
-    --amber-700: #b45309;
-    --amber-800: #92400e;
+    
+    --amber-100: var(--maroon-100);
+    --amber-600: var(--maroon-600);
+    --amber-700: var(--maroon-700);
+    --amber-800: var(--maroon-800);
+
     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
