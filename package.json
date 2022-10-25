@@ -4,8 +4,8 @@
   "description": "a static 11ty app",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "npx eleventy",
-    "start": "npx eleventy --serve"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
