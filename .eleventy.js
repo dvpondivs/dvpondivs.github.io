@@ -25,7 +25,7 @@ module.exports = function(eleventyConfg) {
     eleventyConfg.addPassthroughCopy("./src/images/"); // pass through images to the build output
     eleventyConfg.addPassthroughCopy({"./src/favicons": "/"}); // pass through files to the root of the build output
     
-    config.addPassthroughCopy("src/CNAME");
+    eleventyConfg.addPassthroughCopy("src/CNAME");
 
     eleventyConfg.addShortcode("year", () => `${new Date().getFullYear()}`);
 
