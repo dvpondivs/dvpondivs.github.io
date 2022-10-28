@@ -1,0 +1,9 @@
+<section class="games">
+  <h2 class="game__heading">Games in Development</h2>
+  <div class="game-grid">
+    {# Have to use async each for this for loop because of image optimisation #}
+    {% asyncEach game in collections.games %}
+      {% include "game-card.njk" %}
+    {% endeach %}
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<article class="game-card">
+  <div class="game-card__image-wrapper">
+    {# <img class="game__image" src="{{ game.data.image }}" alt="{{ game.data.imageAlt }}"> #}
+    {% EleventyImage game.data.image, game.data.imageAlt, "(min-width: 30em) 50vw, 100vw" %}
+  </div>
+  <div class="game-card__body">
+    <div class="game-card__tags">
+      {% for tag in game.data.mechanisms %}
+        <span class="game-card__tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <h3 class="game-card__title">
+      <a href="{{ game.url }}">{{ game.data.title }}</a>
+    </h3>
+    <p class="game-card__summary">{{ game.data.summary }}</p>
+    <a class="game-card__link" href="{{ game.url }}">Read game case study 
+      <svg xmlns="http://www.w3.org/2000/svg" class="game-card__link-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
+  </div>
+</article>
