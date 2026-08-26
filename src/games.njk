@@ -1,0 +1,12 @@
+---
+title: "Dupondius Games"
+layout: "base.njk"
+---
+
+<h2 class="games__heading">Games in Development</h2>
+<div class="game-list">
+  {# Have to use async each for this for loop because of image optimisation #}
+  {% asyncEach game in collections.games %} 
+    {% include "game-card.njk" %}
+  {% endeach %}
+</div>
