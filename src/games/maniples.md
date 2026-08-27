@@ -1,9 +1,11 @@
 ---
 title: "Maniples"
-summary: "A bag-building game."
-image: /images/republic.svg
-imageAlt: "A coin from the Roman Republic"
-mechanisms:
+description: "A bag-building game."
+date: 2024-12-28
+slug: maniples
+image: /assets/images/republic.svg
+image_alt: "A coin from the Roman Republic"
+tags:
     - "hand management"
     - "bag-building"
     - "P/S/R"

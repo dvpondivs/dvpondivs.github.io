@@ -1,9 +1,11 @@
 ---
 title: "Akrocorinth"
-summary: "A light 2-player tile laying game."
-image: /images/republic.svg
-imageAlt: "A coin from the Roman Republic"
-mechanisms:
+description: "A light 2-player tile laying game."
+date: 2024-12-28
+slug: akrocorinth
+image: /assets/images/republic.svg
+image_alt: "A coin from the Roman Republic"
+tags:
     - "tile laying"
     - "hex tiles"
     - "2 player"

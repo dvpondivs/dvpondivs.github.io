@@ -1,9 +1,11 @@
 ---
 title: "Warchief"
-summary: "A tableau-building game."
-image: /images/republic.svg
-imageAlt: "A coin from the Roman Republic"
-mechanisms:
+description: "A tableau-building game."
+date: 2024-12-28
+slug: warchief
+image: /assets/images/republic.svg
+image_alt: "A coin from the Roman Republic"
+tags:
     - "hand management"
     - "tableau-building"
     - "P/S/R"

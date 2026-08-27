@@ -19,7 +19,7 @@ layout: layouts/base.njk
       {% if tags and tags.length > 0 %}
         <div class="flex flex-wrap gap-2 mb-4">
           {% for tag in tags %}
-            {% if tag !== "game" %}
+            {% if tag !== "games" %}
               {{ badge({ text: tag, variant: "primary" }) }}
             {% endif %}
           {% endfor %}
