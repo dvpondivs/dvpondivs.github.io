@@ -1,42 +1,55 @@
-const Image = require("@11ty/eleventy-img");
+import collections from "./config/collections.js";
+import filters from "./config/filters.js";
+import shortcodes from "./config/shortcodes.js";
+import transforms from "./config/transforms.js";
+import plugins from "./config/plugins.js";
 
-async function imageShortcode(src, alt, sizes) {
-    let metadata = await Image(`./src${src}`, {
-        widths: [300, 800, null], // the sizes (in px) of the generated images (null means original size)
-        formats: ["avif", "jpeg"], // the formats to generate the images in
-        urlPath: "/images/",
-        outputDir: "./public/images" // the location of the optimised images
+// eleventyConfig is the default configuration object that Eleventy provides to customize the build process
+export default function (eleventyConfig) {
+
+    // Collections
+    collections(eleventyConfig);
+
+    // Filters
+    filters(eleventyConfig);
+
+    // Shortcodes
+    shortcodes(eleventyConfig);
+
+    // Transforms
+    transforms(eleventyConfig);
+
+    // Plugins
+    plugins(eleventyConfig);
+
+    // Pass-through copies
+    eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
+    eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
+    eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+    // eleventyConfg.addPassthroughCopy("./src/css/"); // pass through css to the build output
+
+    // Watch targets
+    eleventyConfig.addWatchTarget("./src/assets/css/");
+    eleventyConfig.addWatchTarget("./src/assets/js/");
+
+    // Server options
+    eleventyConfig.setServerOptions({
+        port: 8080,
+        watch: ["public/assets/css/**/*.css", "public/assets/js/**/*.js"],
     });
 
-    let imageAttribues = {
-        alt,
-        sizes,
-        loading: "lazy",
-        decoding: "async"
-    };
-
-    return Image.generateHTML(metadata, imageAttribues);
-}
-
-module.exports = function(eleventyConfg) {
-    // eleventyConfig is the default configuration object that Eleventy provides to customize the build process
-    eleventyConfg.addWatchTarget("./src/css/"); // eleventy dev server to watch css (hot reload)
-    eleventyConfg.addPassthroughCopy("./src/css/"); // pass through css to the build output
-    eleventyConfg.addPassthroughCopy("./src/images/"); // pass through images to the build output
-    eleventyConfg.addPassthroughCopy({"./src/favicons": "/"}); // pass through files to the root of the build output
-    
-    eleventyConfg.addPassthroughCopy("./CNAME");
-
-    eleventyConfg.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-    // image generation process is asynchronous and will take some time the different sizes and formats
-    // shortcode has to wait until these have all been generated before injecting HTML into the templates
-    eleventyConfg.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+    eleventyConfig.addPassthroughCopy("./CNAME");
 
     return {
         dir: {
-            input: "src",
-            output: "public"
-        }
+        input: "src",
+        output: "public",
+        includes: "_includes",
+        data: "_data",
+        },
+        markdownTemplateEngine: "njk",
+        htmlTemplateEngine: "njk",
+        templateFormats: ["njk", "md", "html"],
     };
-};
+
+}
