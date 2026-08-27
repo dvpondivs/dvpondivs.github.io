@@ -28,7 +28,7 @@ export default function (eleventyConfig) {
     outputDir: ".cache/@11ty/img/",
     failOnError: false,
 
-    // File extensions to process in _site folder
+    // File extensions to process in public folder
     extensions: "html",
 
     // Output formats for each image
