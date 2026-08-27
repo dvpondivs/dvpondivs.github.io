@@ -1,0 +1,196 @@
+{#
+  Component Macros
+  Import with: {% from "_components/index.njk" import button, badge, card %}
+#}
+
+{# =====================================================
+   Button Component
+   Props:
+   - text: Button text (required)
+   - url: Link URL (optional, renders as <a> if provided)
+   - variant: primary|secondary|outline|ghost|white|danger (default: primary)
+   - size: xs|sm|md|lg (default: md)
+   - full: boolean - full width
+   - type: button|submit|reset (for button elements)
+   - disabled: boolean
+   - className: additional classes
+   - external: boolean - opens in new tab
+   - icon_left: phosphor icon name (optional)
+   - icon_right: phosphor icon name (optional)
+===================================================== #}
+{% macro button(props) %}
+  {% set variant = props.variant | default("primary") %}
+  {% set size = props.size | default("md") %}
+
+  {% set classes = "btn btn--" + variant + " btn--" + size %}
+  {% if props.full %}{% set classes = classes + " btn--full" %}{% endif %}
+  {% if props.className %}{% set classes = classes + " " + props.className %}{% endif %}
+
+  {% if props.url %}
+    <a
+      href="{{ props.url }}"
+      class="{{ classes }}"
+      {% if props.external %}target="_blank" rel="noopener noreferrer"{% endif %}
+    >
+      {% if props.icon_left %}{% phosphor props.icon_left, "bold", { size: 16 } %}{% endif %}
+      {{ props.text }}
+      {% if props.icon_right %}{% phosphor props.icon_right, "bold", { size: 16 } %}{% endif %}
+    </a>
+  {% else %}
+    <button
+      type="{{ props.type | default('button') }}"
+      class="{{ classes }}"
+      {% if props.disabled %}disabled{% endif %}
+    >
+      {% if props.icon_left %}{% phosphor props.icon_left, "bold", { size: 16 } %}{% endif %}
+      {{ props.text }}
+      {% if props.icon_right %}{% phosphor props.icon_right, "bold", { size: 16 } %}{% endif %}
+    </button>
+  {% endif %}
+{% endmacro %}
+
+
+{# =====================================================
+   Badge Component
+   Props:
+   - text: Badge text (required)
+   - variant: primary|secondary|success|warning|error (default: primary)
+   - url: Link URL (optional)
+   - className: additional classes
+===================================================== #}
+{% macro badge(props) %}
+  {% set variant = props.variant | default("primary") %}
+  {% set classes = "badge badge--" + variant %}
+  {% if props.className %}{% set classes = classes + " " + props.className %}{% endif %}
+
+  {% if props.url %}
+    <a href="{{ props.url }}" class="{{ classes }}">
+      {{ props.text }}
+    </a>
+  {% else %}
+    <span class="{{ classes }}">
+      {{ props.text }}
+    </span>
+  {% endif %}
+{% endmacro %}
+
+
+{# =====================================================
+   Card Component
+   Props:
+   - title: Card title (required)
+   - description: Card description
+   - url: Link URL
+   - image: Image URL
+   - image_alt: Image alt text
+   - date: Date string
+   - tags: Array of tag strings
+   - className: additional classes
+===================================================== #}
+{% macro card(props) %}
+  <article class="group relative flex flex-col bg-white rounded-2xl shadow-sm border border-zinc-200 overflow-hidden hover:shadow-lg hover:border-primary-300 transition-all duration-300 hc:border-zinc-400 {{ props.className | default('') }}">
+    {% if props.image %}
+      <div class="aspect-video overflow-hidden">
+        <img
+          src="{{ props.image }}"
+          alt="{{ props.image_alt | default(props.title) }}"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          eleventy:widths="400"
+        >
+      </div>
+    {% endif %}
+
+    <div class="flex flex-col flex-1 p-6">
+      {% if props.date %}
+        <div class="text-sm text-zinc-500 mb-2 hc:text-zinc-600">
+          <time datetime="{{ props.date | dateToISOString }}">{{ props.date | shortDate }}</time>
+        </div>
+      {% endif %}
+
+      <h3 class="text-lg font-semibold text-zinc-900 mb-2 group-hover:text-primary-700 transition-colors">
+        {% if props.url %}
+          <a href="{{ props.url }}" class="no-underline hc:underline">
+            <span class="absolute inset-0"></span>
+            {{ props.title }}
+          </a>
+        {% else %}
+          {{ props.title }}
+        {% endif %}
+      </h3>
+
+      {% if props.description %}
+        <p class="text-zinc-600 line-clamp-3 hc:text-zinc-700">
+          {{ props.description | truncate(150) }}
+        </p>
+      {% endif %}
+
+      {% if props.url %}
+        <span class="inline-flex items-center gap-1 mt-auto pt-4 text-primary-700 font-medium group-hover:gap-2 transition-all">
+          Read more
+          {% phosphor "arrow-right", "bold", { size: 16 } %}
+        </span>
+      {% endif %}
+    </div>
+  </article>
+{% endmacro %}
+
+
+{# =====================================================
+   Accordion Component
+   Props:
+   - items: Array of { question, answer } objects
+   - className: additional classes
+===================================================== #}
+{% macro accordion(props) %}
+  <div x-data="accordion()" class="space-y-3 {{ props.className | default('') }}">
+    {% for item in props.items %}
+      <div class="border border-zinc-200 rounded-lg overflow-hidden hc:border-zinc-400">
+        <button
+          type="button"
+          @click="toggle({{ loop.index }})"
+          class="w-full flex items-center justify-between px-4 py-3 text-left font-medium text-zinc-900 hover:bg-zinc-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-inset"
+          :aria-expanded="isOpen({{ loop.index }})"
+        >
+          <span>{{ item.question }}</span>
+          <svg
+            class="w-5 h-5 text-zinc-500 transition-transform duration-200"
+            :class="isOpen({{ loop.index }}) ? 'rotate-180' : ''"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div
+          x-show="isOpen({{ loop.index }})"
+          x-cloak
+          x-collapse
+          class="text-zinc-600 hc:text-zinc-700"
+        >
+            <div class="px-4 pb-4 ">{{ item.answer | safe }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+
+{# =====================================================
+   Alert Component
+   Props:
+   - text: Alert message (required)
+   - variant: info|success|warning|error (default: info)
+   - title: Optional title
+   - className: additional classes
+===================================================== #}
+{% macro alert(props) %}
+  {% set variant = props.variant | default("info") %}
+  <div class="alert alert--{{ variant }} {{ props.className | default('') }}" role="alert">
+    {% if props.title %}
+      <strong class="block font-semibold mb-1">{{ props.title }}</strong>
+    {% endif %}
+    <p>{{ props.text }}</p>
+  </div>
+{% endmacro %}
