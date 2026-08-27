@@ -63,8 +63,7 @@ dvpondivs.github.io/
 │   │   ├── layouts/           # Page layouts
 │   │   │   ├── base.njk       # Base HTML layout
 │   │   │   ├── page.njk       # Standard page layout
-│   │   │   ├── post.njk       # Blog post layout
-│   │   │   ├── author.njk     # Author page layout
+│   │   │   ├── game.njk       # Game post layout
 │   │   │   ├── legal.njk      # Legal pages layout
 │   │   │   └── error.njk      # Error pages layout
 │   │   ├── partials/          # Reusable partials
@@ -82,7 +81,6 @@ dvpondivs.github.io/
 │   │   │   ├── _forms.css
 │   │   │   ├── _utilities.css
 │   │   │   ├── _pagefind.css
-│   │   │   ├── _youtube.css
 │   │   │   └── _high-contrast.css
 │   │   └── js/
 │   │       ├── main.js
