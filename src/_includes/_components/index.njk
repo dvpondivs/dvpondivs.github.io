@@ -102,11 +102,23 @@
     {% endif %}
 
     <div class="flex flex-col flex-1 p-6">
-      {% if props.date %}
+
+      {# Tags #}
+      {% if props.tags and props.tags.length > 0 %}
+        <div class="flex flex-wrap gap-2 mb-4">
+          {% for tag in props.tags %}
+            {% if tag !== "games" %}
+              {{ badge({ text: tag, variant: "primary" }) }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {# {% if props.date %}
         <div class="text-sm text-zinc-500 mb-2 hc:text-zinc-600">
           <time datetime="{{ props.date | dateToISOString }}">{{ props.date | shortDate }}</time>
         </div>
-      {% endif %}
+      {% endif %} #}
 
       <h3 class="text-lg font-semibold text-zinc-900 mb-2 group-hover:text-primary-700 transition-colors">
         {% if props.url %}
