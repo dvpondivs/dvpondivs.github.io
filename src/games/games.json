@@ -1,4 +1,7 @@
 {
-    "layout": "game.njk",
-    "tags": "games"
+    "layout": "layouts/game.njk",
+    "tags": ["games"],
+    "eleventyComputed": {
+        "permalink": "/games/{{ slug or page.fileSlug }}/"
+  }
 }

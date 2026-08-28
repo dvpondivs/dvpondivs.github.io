@@ -1,14 +1,14 @@
 ---
-title: "Maniples"
-description: "A bag-building game."
+title: "Sibyl"
+description: "A light 2-player tile laying game."
 date: 2024-12-28
-slug: maniples
+slug: sibly
 image: /assets/images/republic.svg
 image_alt: "A coin from the Roman Republic"
 tags:
-    - "hand management"
-    - "bag-building"
-    - "P/S/R"
+    - "tile laying"
+    - "hex tiles"
+    - "2 player"
 siteUrl: "#"
 repoUrl: "#"
 ---

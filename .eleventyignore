@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+public/
+.cache/
+
+# Documentation
+README.md
+
+# Config files
+.editorconfig
+.eslintrc*
+.prettierrc*
+.gitignore
+.nvmrc
+
+# IDE
+.vscode/
+.idea/
+
+# Package files
+package.json
+package-lock.json

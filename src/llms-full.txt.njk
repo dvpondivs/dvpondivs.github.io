@@ -1,0 +1,41 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title }}
+
+> {{ metadata.description }}
+
+---
+
+## Pages
+
+{%- for page in collections.pages %}
+{%- if not page.data.llms_exclude and not page.data.eleventyExcludeFromCollections %}
+
+### {{ page.data.title }}
+
+URL: {{ build.url }}{{ page.url }}
+
+{{ page.templateContent | striptags | collapseWhitespace }}
+
+---
+{%- endif %}
+{%- endfor %}
+
+## Games
+
+{%- for game in collections.games %}
+{%- if not game.data.llms_exclude %}
+
+### {{ game.data.title }}
+
+URL: {{ build.url }}{{ game.url }}
+Date: {{ game.date | readableDate }}
+
+{{ game.templateContent | striptags | collapseWhitespace }}
+
+---
+{%- endif %}
+{%- endfor %}
+
