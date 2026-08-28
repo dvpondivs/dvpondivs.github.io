@@ -1,0 +1,17 @@
+# Dupondius Games
+
+> A collection of games and game development projects by camjm.
+
+## Pages
+- [About Dupondius Games](https://dupondius.games/about/): Learn more about Dupondius Games and the team behind it.
+- [Contact](https://dupondius.games/contact/): Get in touch with us. We&#39;d love to hear from you.
+- [Games in Development](https://dupondius.games/games/): A collection of games and game development projects by camjm.
+- [Dupondius Games](https://dupondius.games/): A collection of games and game development projects by camjm.
+- [Thanks for getting in touch!](https://dupondius.games/success/): I&#39;ll respond as soon as I can.
+- [Typography Test](https://dupondius.games/typography/): A comprehensive test page showcasing all typography styles and prose elements.
+
+## Games
+- [Akrocorinth](https://dupondius.games): A light 2-player tile laying game.
+- [Maniples](https://dupondius.games): A bag-building game.
+- [Sibyl](https://dupondius.games): A light 2-player tile laying game.
+- [Warchief](https://dupondius.games): A tableau-building game.

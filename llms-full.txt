@@ -1,0 +1,94 @@
+# Dupondius Games
+
+> A collection of games and game development projects by camjm.
+
+---
+
+## Pages
+
+### About Dupondius Games
+
+URL: https://dupondius.games/about/
+
+Electric Lime is a modern, accessible 11ty starter kit designed to help you build beautiful, fast websites with minimal effort. Our Mission We believe that building websites should be simple, fast, and enjoyable. That&#39;s why we created Electric Lime - a starter kit that combines the best tools in the modern web development ecosystem. Technology Stack Eleventy (11ty) Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Turpis egestas integer eget aliquet. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Ut lectus arcu bibendum at. Integer enim neque volutpat ac tincidunt. Tailwind CSS v4 Commodo ullamcorper a lacus vestibulum sed arcu. Et tortor consequat id porta nibh venenatis cras sed. Nulla pharetra diam sit amet nisl. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Nec sagittis aliquam malesuada bibendum. Alpine.js Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Turpis egestas integer eget aliquet. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Ut lectus arcu bibendum at. Integer enim neque volutpat ac tincidunt. Nunjucks Commodo ullamcorper a lacus vestibulum sed arcu. Et tortor consequat id porta nibh venenatis cras sed. Nulla pharetra diam sit amet nisl. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Nec sagittis aliquam malesuada bibendum. Features Accessible by default - WCAG AA compliant with high contrast mode SEO optimized - Meta tags, Open Graph, sitemap, and RSS feed Performance focused - Static HTML, optimized images, minimal JavaScript Developer friendly - Hot reload, modular architecture, clear documentation Get Involved Electric Lime is open source and contributions are welcome! Check out our GitHub repository to get started.
+
+---
+
+### Contact
+
+URL: https://dupondius.games/contact/
+
+Have a question or want to work together? Fill out the form and we&#39;ll get back to you as soon as possible. 📧 Email contact@dupondius.games 🐙 GitHub View on GitHub Name Email Subject Select a subject General Inquiry Support Feedback Other Message Let&amp;#39;s talk
+
+---
+
+### Games in Development
+
+URL: https://dupondius.games/games/
+
+Games in Development A collection of games and game development projects by camjm. tile laying hex tiles 2 player Akrocorinth A light 2-player tile laying game. Read more hand management bag-building P/S/R Maniples A bag-building game. Read more tile laying hex tiles 2 player Sibyl A light 2-player tile laying game. Read more 1 2
+
+---
+
+### Dupondius Games
+
+URL: https://dupondius.games/
+
+
+
+---
+
+### Thanks for getting in touch!
+
+URL: https://dupondius.games/success/
+
+
+
+---
+
+### Typography Test
+
+URL: https://dupondius.games/typography/
+
+This page demonstrates all the typography styles available. It serves as both a test page and a reference for content creators. Headings Headings help organize content into logical sections. Here are all six heading levels: Heading Level 1 Heading Level 2 Heading Level 3 Heading Level 4 Heading Level 5 Heading Level 6 Paragraphs and Text Regular paragraphs are styled for optimal readability with appropriate line height and spacing. Here&#39;s an example of a longer paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. You can also use bold text for emphasis, italic text for titles or foreign words, and bold italic when you really need to make a point. There&#39;s also strikethrough for deleted content. Links Links are styled with the primary color: Visit our homepage or check out GitHub. Lists Unordered Lists First item in the list Second item with more content Nested item one Nested item two Third item at the root level Ordered Lists First step in the process Second step with more details Sub-step A Sub-step B Third and final step Blockquotes &amp;quot;Design is not just what it looks like and feels like. Design is how it works.&amp;quot; — Steve Jobs Blockquotes can also contain multiple paragraphs: This is the first paragraph of a longer quote. And this is the second paragraph, continuing the thought from above. Code Inline code looks like this: const greeting = &amp;quot;Hello, World!&amp;quot; and can be used within sentences. Code blocks are great for larger snippets: // A simple function example function greet(name) { return `Hello, ${name}!`; } console.log(greet(&amp;quot;World&amp;quot;)); /* CSS example */ .button { background-color: var(--color-primary-600); color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; } Tables Feature Basic Pro Enterprise Pages 10 100 Unlimited Storage 1 GB 10 GB 100 GB Support Email Priority Dedicated Price Free $19/mo $99/mo Images Images can be included using markdown syntax. Example: ![Alt text](/path/to/image.jpg) Horizontal Rules Content above the rule. Content below the rule. Other Elements Abbreviations The HTML specification is maintained by the W3C. Keyboard Input To save a file, press Ctrl + S (or Cmd + S on Mac). Marked Text You can highlight important information using the mark element. Small Text This is some fine print that you probably don&#39;t need to read. Definition Lists Eleventy A simpler static site generator Tailwind CSS A utility-first CSS framework Alpine.js A lightweight JavaScript framework Summary This typography test page covers all the common prose elements you&#39;ll encounter when creating content. The styles are designed to be readable, accessible, and visually appealing across all devices.
+
+---
+
+## Games
+
+### Akrocorinth
+
+URL: https://dupondius.games/games/akrocorinth/
+Date: 28 December 2024
+
+Problem Solved Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci. Technologies Used Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Challenges Faced Eget mauris pharetra et ultrices. Molestie nunc non blandit massa enim nec. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus nulla at. Lessons Learned Non blandit massa enim nec. Tempor commodo ullamcorper a lacus vestibulum sed. Et netus et malesuada fames ac turpis egestas integer eget. In ante metus dictum at tempor commodo. Eu scelerisque felis imperdiet proin fermentum leo.
+
+---
+
+### Maniples
+
+URL: https://dupondius.games/games/maniples/
+Date: 28 December 2024
+
+Problem Solved Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci. Technologies Used Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Challenges Faced Eget mauris pharetra et ultrices. Molestie nunc non blandit massa enim nec. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus nulla at. Lessons Learned Non blandit massa enim nec. Tempor commodo ullamcorper a lacus vestibulum sed. Et netus et malesuada fames ac turpis egestas integer eget. In ante metus dictum at tempor commodo. Eu scelerisque felis imperdiet proin fermentum leo.
+
+---
+
+### Sibyl
+
+URL: https://dupondius.games/games/sibly/
+Date: 28 December 2024
+
+Problem Solved Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci. Technologies Used Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Challenges Faced Eget mauris pharetra et ultrices. Molestie nunc non blandit massa enim nec. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus nulla at. Lessons Learned Non blandit massa enim nec. Tempor commodo ullamcorper a lacus vestibulum sed. Et netus et malesuada fames ac turpis egestas integer eget. In ante metus dictum at tempor commodo. Eu scelerisque felis imperdiet proin fermentum leo.
+
+---
+
+### Warchief
+
+URL: https://dupondius.games/games/warchief/
+Date: 28 December 2024
+
+Problem Solved Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt tortor aliquam nulla facilisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Condimentum lacinia quis vel eros donec ac odio tempor orci. Technologies Used Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Challenges Faced Eget mauris pharetra et ultrices. Molestie nunc non blandit massa enim nec. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nulla at volutpat diam ut venenatis. Volutpat ac tincidunt vitae semper quis lectus nulla at. Lessons Learned Non blandit massa enim nec. Tempor commodo ullamcorper a lacus vestibulum sed. Et netus et malesuada fames ac turpis egestas integer eget. In ante metus dictum at tempor commodo. Eu scelerisque felis imperdiet proin fermentum leo.
+
+---
+

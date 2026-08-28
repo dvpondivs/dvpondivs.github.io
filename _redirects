@@ -1,0 +1,6 @@
+# Redirect rules
+# Format: /from /to status-code
+# Examples:
+# /old-page /new-page 301
+# /games/old-game /games/new-game 302
+# /external https://example.com 301
