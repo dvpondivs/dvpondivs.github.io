@@ -1,9 +1,16 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: "Dupondius Games"
 description: A collection of games and game development projects by camjm.
 permalink: /index.html
 ---
+{% from "_components/index.njk" import alert %}
+
+{{ alert({
+        text: "In Progress",
+        variant: "info",
+        title: "This landing page is a work in progress and may not be complete. Check out the navigation links above!"
+      }) }}
 
 {# {% include "profile.njk" %}
 {% include "game-grid.njk" %} #}
